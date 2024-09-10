@@ -14,6 +14,28 @@ console.log(sum);
 
 var randomNum = 32;
 
+var parentDiv = document.getElementById("parent");
+
+var pElement = document.getElementById("text");
+
 if(randomNum < 10){
     console.log("The number is less than 10");
 }
+
+// FUNCTIONS 
+
+function printHello(){
+    console.log("Hello")
+}
+
+function changeWords(){
+    pElement.innerText = "New stuff.";
+}
+
+printHello();
+
+console.log(parentDiv);
+
+parentDiv.addEventListener("click",printHello);
+
+pElement.addEventListener("click", changeWords);
