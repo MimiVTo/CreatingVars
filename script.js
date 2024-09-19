@@ -72,8 +72,6 @@ line.addEventListener("click", elementClicked);
 
 var list = [1, 2, 3, 4, 5, 6]
 
-console.log(list);
-
 var listLength = list.length;
 
 console.log(listLength);
@@ -81,3 +79,46 @@ console.log(listLength);
 list.push(7);
 
 console.log(list);
+
+list.pop(); // Gets rid of last one
+
+console.log(list);
+
+var stringList = list.toString(); //toString turns it into a string
+console.log(stringList);
+
+var joinList = list.join("-"); // Changes the ", " into dashes
+console.log(joinList);
+
+// EXAMPLE 
+
+var Fname = "Mimi";
+
+var numOfChar = Fname.length;
+
+console.log(numOfChar);
+
+var pieceMimi = Fname.slice(1,4);
+console.log(pieceMimi);
+
+// LOOPS
+
+var studentNames = ["Mimi", "Imani","Niusha"];
+var Nums = [2, 6, 5, 1];
+var HighestNum = Nums[0];
+
+for (var i=0; i < list.length;i++){
+    console.log("done");
+}
+
+for (var i=0;i<studentNames.length;i++){
+    console.log(studentNames[i]);
+}
+
+for (var i=0; i < Nums.length; i++){
+
+    if(Nums[i]>HighestNum){
+        HighestNum = Nums[i];
+        console.log(HighestNum);
+    }
+}
